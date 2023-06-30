@@ -11,5 +11,12 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
  uint256 constant public _price = 0.01 ether;
 
  // Max number of CryptoDevs that can ever exist
- uint256 constant public
+ uint256 constant public maxTokenIds = 20;
+
+ // Whitelist contract instance
+ Whitelist whitelist;
+
+  // Number of tokens reserved for whitelisted members
+  uint256 public reservedTokens;
+  uint256 public reservedTokensClaimed = 0;
 }
