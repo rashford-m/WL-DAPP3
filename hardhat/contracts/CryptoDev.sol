@@ -31,4 +31,7 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
         whitelist = Whitelist(whitelistContract);
         reservedTokens = whitelist.maxWhitelistedAddresses();
     }
+    function mint() public payable {
+        
+    }
 }
