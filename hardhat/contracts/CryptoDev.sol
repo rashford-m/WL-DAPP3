@@ -64,4 +64,3 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
         require(sent, "Failed to send Ether");
     }
 }
-
